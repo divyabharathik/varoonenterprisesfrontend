@@ -1,0 +1,15 @@
+
+<section class="container">
+  <div class="product-image">
+    <div class="bg-image" [style]=color> </div>
+    <div class="image-container">
+      <img [src]=product.imageLink alt="product-image">
+    </div>
+  </div>
+  <div class="details">
+    <div class="product-name">{{product.productName}}</div>
+    <div class="iupac-name">Solanum lycopersicum</div>
+    <p>{{product.description}}</p>
+    <button mat-raised-button [style]=color (click)="openBottomSheet()">Send Inquiry</button>
+  </div>
+</section>

@@ -1,0 +1,79 @@
+<div class="div">
+  <div class="header">
+    <div class="h2">Send Inquiry</div>
+    <mat-icon (click)="close()">close</mat-icon>
+  </div>
+  <div class="main">
+    <form [formGroup]="contactForm" novalidate>
+      <div class="field-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input required matInput placeholder="Name" formControlName="name">
+          <mat-error *ngIf="contactForm.controls.name?.errors?.required">
+            Name is required
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>WhatsApp contact number</mat-label>
+          <input matInput placeholder="Mobile No" formControlName="mobile" type="number">
+          <mat-error *ngIf="contactForm.controls.mobile?.errors?.required">
+            Mobile number is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="field-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Email ID</mat-label>
+          <input required matInput placeholder="Email ID" type="email" formControlName="email">
+          <mat-error *ngIf="contactForm.controls.email?.errors?.pattern">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="contactForm.controls.email?.errors?.required">
+            Email is required
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Categories interested</mat-label>
+          <mat-select formControlName="category" multiple>
+            <mat-select-trigger>
+              {{contactForm.controls.category.value?.[0] || ''  | titlecase}}
+              <span *ngIf="(contactForm.controls.category.value?.length || 0) > 1">
+                (+{{(contactForm.controls.category.value?.length || 0) - 1}}
+                {{contactForm.controls.category.value?.length === 2 ? 'other' : 'others'}})
+              </span>
+            </mat-select-trigger>
+            <mat-option *ngFor="let category of categoryList" [value]="category">
+              {{category | titlecase}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="field">
+        <mat-chip-listbox aria-label="product selection" multiple="true" formControlName="productInterest">
+          <mat-chip-option *ngFor="let product of productList">
+            {{product.productName}}
+          </mat-chip-option>
+        </mat-chip-listbox>
+        <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <textarea cdkTextareaAutosize="true" matInput formControlName="address" name="address" cols="30"></textarea>
+          <mat-error *ngIf="contactForm.controls.address?.errors?.required">
+            Address is required
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Send us your query here</mat-label>
+          <textarea cdkTextareaAutosize="true" matInput formControlName="query" name="query" cols="30"></textarea>
+          <mat-error *ngIf="contactForm.controls.query?.errors?.required">
+            Please write us your query here
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="button_row">
+        <button [disabled]="loading" mat-flat-button color="primary" (click)="getContactDetails()">Submit</button>
+      </div>
+    </form>
+
+
+  </div>
+
+</div>

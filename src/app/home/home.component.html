@@ -1,0 +1,34 @@
+<section class="landing">
+  <div class="image-container">
+    <img src="../../assets/images/c-1.jpg" alt="">
+  </div>
+  <div class="overlay">
+    <div class="headline">Looking for fresh and finest<br> Vegetables, Fruits and Millets</div>
+    <button mat-raised-button style="background-color: black;color: white;">Enquire now</button>
+  </div>
+</section>
+<section class="container top-categories">
+  <h4>TOP CATEGORIES</h4>
+  <div class="card-container">
+    <div class="category-card"*ngFor="let category of categoryList">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card-image-container">
+              <img [src]=category.imageLink alt="">
+            </div>
+            <div class="card-text">{{category.categoryName}}</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="description">
+              Explore more products from {{category.categoryName}} category
+            </div>
+            <button mat-raised-button style="background-color: black;color: white;">Send Inquiry</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>

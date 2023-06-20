@@ -1,0 +1,15 @@
+<section class="main">
+  <div class="container">
+    <h2>Categories</h2>
+    <div class="category-list">
+      <div class="category-item" *ngFor="let category of categoryList" (click)="onSelect(category)">
+        <div class="image-container">
+          <img [src]=category.imageLink alt="">
+        </div>
+        <div class="overlay">
+          <div class="category-name">{{category.categoryName}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

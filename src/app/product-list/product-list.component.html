@@ -1,0 +1,19 @@
+<section class="main">
+  <div class="container">
+    <div class="header">
+      <div class="h2">{{categoryName}}</div>
+      <mat-icon (click)="back()">arrow_back_ios</mat-icon>
+    </div>
+    <div class="product-list">
+      <div class="product-item" *ngFor="let product of productList" (click)="onSelect(product)">
+        <div class="image-container">
+          <img [src]=product.imageLink alt="">
+        </div>
+        <div class="overlay">
+          <div class="product-name">{{product.productName}}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

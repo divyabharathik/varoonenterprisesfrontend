@@ -1,0 +1,22 @@
+<nav>
+  <div class="logo">
+    <img src="../../assets/icons/icon.png" alt="">
+  </div>
+  <div class="title-container">
+    <div class="hr"></div>
+    <div class="title-tagline">
+      <div class="title">VAROON ENTERPRISES</div>
+      <div class="tagline">Quality exports, Worldwide reach</div>
+    </div>
+    <div class="hr"></div>
+  </div>
+  <div class="menu">
+    <ul class="navigation">
+      <li class="nav-item" *ngFor="let 'item' of menuItems">
+        <div [routerLink]=item.link routerLinkActive="active">
+          <a >{{item.name}}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

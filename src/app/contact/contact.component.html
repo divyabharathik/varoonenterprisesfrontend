@@ -1,0 +1,62 @@
+<section class="main">
+    <h2>Contact Us</h2>
+  <div class="container">
+    <form [formGroup]="contactForm"  novalidate>
+      <div class="field-row">
+        <p>We're here to help! Reach out to us through our contact form and let's discuss how we can meet your export
+          needs</p>
+      </div>
+      <div class="field-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input required matInput placeholder="Name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Mobile No</mat-label>
+          <input matInput placeholder="Mobile No" formControlName="mobile">
+        </mat-form-field>
+      </div>
+      <div class="field-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Email ID</mat-label>
+          <input required matInput placeholder="Email ID" type="email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category" multiple>
+            <mat-select-trigger>
+              {{contactForm.controls.category.value?.[0] || ''}}
+              <span *ngIf="(contactForm.controls.category.value?.length || 0) > 1" class="example-additional-selection">
+                (+{{(contactForm.controls.category.value?.length || 0) - 1}}
+                {{contactForm.controls.category.value?.length === 2 ? 'other' : 'others'}})
+              </span>
+            </mat-select-trigger>
+            <mat-option *ngFor="let category of categoryList" [value]="category">{{category}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="field">
+        <mat-form-field appearance="outline">
+          <mat-label>Send us your query here</mat-label>
+          <textarea matInput formControlName="query" name="query" cols="30" rows="5"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="field-row">
+        <button [disabled]="loading" mat-flat-button color="primary" (click)="getContactDetails()">Submit</button>
+      </div>
+    </form>
+    <div class="contact-information">
+      <h6>Our Address</h6>
+      <div class="info">
+        <span>1/225 Mahalakshmi street,</span><br>
+        <span>Lakshmi Nagar,</span><br>
+        <span>Chennai - 600048.</span><br>
+        <span>Tamil Nadu, India</span>
+      </div>
+      <h6>Email ID</h6>
+      <a class="info" href="mailto:varoonenterprises@gmail.com">varoonenterprises@gmail.com</a>
+      <h6>Mobile No</h6>
+      <a class="info" href="tel:+91 8925175163">+91 8925175163</a>
+    </div>
+  </div>
+</section>
