@@ -4,7 +4,7 @@
   </div>
   <div class="overlay">
     <div class="headline">Looking for fresh and finest<br> Vegetables, Fruits and Millets</div>
-    <button mat-raised-button style="background-color: black;color: white;">Enquire now</button>
+    <button mat-raised-button style="background-color: black;color: white;" routerLink="/categories">Enquire now</button>
   </div>
 </section>
 <section class="container top-categories">
@@ -19,11 +19,12 @@
             </div>
             <div class="card-text">{{category.categoryName}}</div>
           </div>
-          <div class="flip-card-back">
+          <div class="flip-card-back" (click)="onSelect(category)">
             <div class="description">
               Explore more products from {{category.categoryName}} category
             </div>
-            <button mat-raised-button style="background-color: black;color: white;">Send Inquiry</button>
+            <button mat-raised-button style="background-color: black;color: white;">Send
+              Inquiry</button>
           </div>
         </div>
       </div>

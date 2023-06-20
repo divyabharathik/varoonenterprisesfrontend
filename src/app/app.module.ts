@@ -19,6 +19,7 @@ import { ProductService } from './services/product.service';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EnquiryDialogComponent } from './enquiry-dialog/enquiry-dialog.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { EnquiryDialogComponent } from './enquiry-dialog/enquiry-dialog.componen
     CategoryListComponent,
     ProductListComponent,
     ProductDetailComponent,
-    EnquiryDialogComponent
+    EnquiryDialogComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

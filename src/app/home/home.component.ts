@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,29 +8,12 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  categoryList = [
-    {
-      categoryName: 'Millets',
-      link: 'millets',
-      imageLink: '../../assets/images/millets.png',
-    },
-    {
-      categoryName: 'Vegetables',
-      link: 'vegetables',
-      imageLink: '../../assets/images/vegetables.png',
-    },
-    {
-      categoryName: 'Fruits',
-      link: 'fruits',
-      imageLink: '../../assets/images/fruits.png',
-    },
-    {
-      categoryName: 'Moringa products',
-      link: 'moringaProducts',
-      imageLink: '../../assets/images/moringa.png',
-    },
-  ];
-  constructor(private service: ProductService) { }
+  constructor(private service: ProductService, private router: Router) { }
+  categoryList = this.service.getTopCategoryList();
   ngOnInit() {
+  }
+
+  onSelect(category: any) {
+    this.router.navigate(['categories/' + category.link, { categoryName: category.categoryName }]);
   }
 }

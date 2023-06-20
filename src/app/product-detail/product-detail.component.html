@@ -8,7 +8,7 @@
   </div>
   <div class="details">
     <div class="product-name">{{product.productName}}</div>
-    <div class="iupac-name">Solanum lycopersicum</div>
+    <div class="iupac-name">{{product.scientificName}}</div>
     <p>{{product.description}}</p>
     <button mat-raised-button [style]=color (click)="openBottomSheet()">Send Inquiry</button>
   </div>
