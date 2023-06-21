@@ -78,7 +78,6 @@
 
       }
 
-      // ---------------------------
       .flip-card {
         background-color: transparent;
         width: 200px;
@@ -135,6 +134,17 @@
       .flip-card-back {
         transform: rotateY(180deg);
       }
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .top-categories {
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
     }
   }
 }
