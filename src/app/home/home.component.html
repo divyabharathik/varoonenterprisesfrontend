@@ -1,35 +1,167 @@
 <section class="landing">
   <div class="image-container">
-    <img src="../../assets/images/c-1.jpg" alt="">
+    <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/c-1.jpg" alt="">
   </div>
   <div class="overlay">
     <div class="headline">Looking for fresh and finest<br> Vegetables, Fruits and Millets</div>
-    <button mat-raised-button style="background-color: black;color: white;" routerLink="/categories">Enquire now</button>
+    <button mat-raised-button style="background-color: black;color: white;" routerLink="/categories">Enquire
+      now</button>
   </div>
 </section>
-<section class="container top-categories">
-  <h4>TOP CATEGORIES</h4>
-  <div class="card-container">
-    <div class="category-card"*ngFor="let category of categoryList">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <div class="card-image-container">
-              <img [src]=category.imageLink alt="">
+<section class="top-categories">
+  <div class="container">
+    <h4>TOP CATEGORIES</h4>
+    <div class="card-container">
+      <div class="category-card" *ngFor="let category of categoryList">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-image-container">
+                <img defaultImage="../../assets/images/loading.png" [lazyLoad]=category.imageLink alt="">
+              </div>
+              <div class="card-text">{{category.categoryName}}</div>
             </div>
-            <div class="card-text">{{category.categoryName}}</div>
-          </div>
-          <div class="flip-card-back" (click)="onSelect(category)">
-            <div class="description">
-              Explore more products from {{category.categoryName}} category
+            <div class="flip-card-back" (click)="onSelect(category)">
+              <div class="description">
+                Explore more products from {{category.categoryName}} category
+              </div>
+              <button mat-raised-button style="background-color: black;color: white;">Send
+                Inquiry</button>
             </div>
-            <button mat-raised-button style="background-color: black;color: white;">Send
-              Inquiry</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<section class="container our-values">
+  <div class="value-row">
+    <div class="value" style="background-color: #FF8787;">
+      <div class="value-title">
+        Premium Farm-Fresh Selection
+      </div>
+      <div class="value-content">
+        We meticulously curate a premium assortment of farm-fresh vegetables and fruits, ensuring that only the finest
+        produce reaches your plate.
+      </div>
+    </div>
+    <div class="value" style="background-color: #F8C4B4;">
+      <div class="value-title">
+        Quality Assurance and Food Safety
+      </div>
+      <div class="value-content">
+        Our stringent quality assurance protocols and rigorous food safety measures guarantee that our products meet the
+        highest standards of quality, freshness, and nutritional value.
+      </div>
+    </div>
+  </div>
+  <div class="value-row">
+    <div class="value" style="background-color: #E5EBB2;">
+      <div class="value-title">
+        Global Distribution Network
+      </div>
+      <div class="value-content">
+        With an extensive global distribution network, we efficiently deliver our exceptional products to customers
+        worldwide, ensuring timely and reliable service.
+      </div>
+    </div>
+    <div class="value" style="background-color: #BCE29E;">
+      <div class="value-title">
+        Customer Satisfaction Guaranteed
+      </div>
+      <div class="value-content">
+        We prioritize customer satisfaction and strive to exceed expectations by providing superior products,
+        personalized
+        service, and a commitment to meeting their unique needs.
+      </div>
+    </div>
+  </div>
+</section>
 
+<section>
+  <div class="container best-section">
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-4.jpg" alt="">
+    </div>
+    <div class="square">
+      <div class="small-img">
+        <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/pome.png" alt="">
+      </div>
+      <div class="title">Fresh</div>
+      <div class="content">
+        Our vegetables and fruits are sourced from local farms, ensuring utmost freshness and preserving their natural
+        flavors. With our commitment to quality, you can trust that each bite will be a vibrant and delectable
+        experience.
+      </div>
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-5.jpg" alt="">
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-3.jpg" alt="">
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-2.jpg" alt="">
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-6.jpg" alt="">
+    </div>
+    <div class="square">
+      <div class="small-img">
+        <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/grape.png" alt="">
+      </div>
+      <div class="title">Nutritious</div>
+      <div class="content">
+        Our millets are a nutritional powerhouse, packed with essential vitamins, minerals, and dietary fiber. By
+        incorporating our millets into your diet, enjoy the benefits of their contribute to your overall well-being.
+      </div>
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-1.jpg" alt="">
     </div>
   </div>
 
+  <div class="container best-section-mobile">
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-4.jpg" alt="">
+    </div>
+
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-2.jpg" alt="">
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-6.jpg" alt="">
+    </div>
+    <div class="square">
+      <div class="small-img">
+        <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/pome.png" alt="">
+      </div>
+      <div class="title">Fresh</div>
+      <div class="content">
+        Our vegetables and fruits are sourced from local farms, ensuring utmost freshness and preserving their natural
+        flavors. With our commitment to quality, you can trust that each bite will be a vibrant and delectable
+        experience.
+      </div>
+    </div>
+    <div class="square">
+      <div class="small-img">
+        <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/grape.png" alt="">
+      </div>
+      <div class="title">Nutritious</div>
+      <div class="content">
+        Our millets are a nutritional powerhouse, packed with essential vitamins, minerals, and dietary fiber. By
+        incorporating our millets into your diet, enjoy the benefits of their contribute to your overall well-being.
+      </div>
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-5.jpg" alt="">
+    </div>
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-3.jpg" alt="">
+    </div>
+
+    <div class="square">
+      <img defaultImage="../../assets/images/loading.png" lazyLoad="../../assets/images/image-1.jpg" alt="">
+    </div>
+  </div>
 </section>

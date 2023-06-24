@@ -20,7 +20,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { HttpClientModule } from '@angular/common/http';
 import { EnquiryDialogComponent } from './enquiry-dialog/enquiry-dialog.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +44,7 @@ import { FooterComponent } from './footer/footer.component';
     NgOptimizedImage,
     MaterialModule,
     HttpClientModule,
+    LazyLoadImageModule,
     NgbModule
   ],
   providers: [ProductService],

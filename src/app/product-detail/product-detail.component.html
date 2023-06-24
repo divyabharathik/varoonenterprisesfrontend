@@ -3,7 +3,7 @@
   <div class="product-image">
     <div class="bg-image" [style]=color> </div>
     <div class="image-container">
-      <img [src]=product.imageLink alt="product-image">
+      <img defaultImage="../../assets/images/loading.png" [lazyLoad]=product.imageLink alt="product-image">
     </div>
   </div>
   <div class="details">

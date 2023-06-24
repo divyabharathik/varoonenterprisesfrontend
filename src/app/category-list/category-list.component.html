@@ -4,7 +4,7 @@
     <div class="category-list">
       <div class="category-item" *ngFor="let category of categoryList" (click)="onSelect(category)">
         <div class="image-container">
-          <img [src]=category.imageLink alt="">
+          <img defaultImage="../../assets/images/loading.png" [lazyLoad]=category.imageLink alt="">
         </div>
         <div class="overlay">
           <div class="category-name">{{category.categoryName}}</div>
