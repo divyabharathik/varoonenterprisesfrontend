@@ -150,7 +150,7 @@ export class ProductService {
       scientificName: 'Zea mays',
       color: '#E4CEA1B0',
       imageLink: "../../assets/images/maize.jpg",
-      description: "Experience the wholesome goodness of our premium organic dried maize (cholam). Cultivated in organic farms, our maize is carefully dried to retain its nutritional value. Free from harmful chemicals, our organic maize is versatile and can be used in a variety of culinary preparations. Discover the natural goodness of organic cholam with us.",
+      description: "Experience the wholesome goodness of our premium dried maize (cholam). Cultivated in farms, our maize is carefully dried to retain its nutritional value. Free from harmful chemicals, our premium maize is versatile and can be used in a variety of culinary preparations. Discover the natural goodness of cholam with us.",
       category: 'millets'
     },
     {
@@ -159,7 +159,7 @@ export class ProductService {
       scientificName: 'Pennisetum glaucum',
       color: '#EFE1CAB0',
       imageLink: "../../assets/images/pearlmillet.jpg",
-      description: "Embrace the nutritional power of our premium organic Pearl Millet (Kambu). Sourced from organic farms, our millet is packed with essential nutrients. Cultivated without harmful chemicals, our organic Pearl Millet offers a nutty flavor and versatility for various culinary creations. Discover the wholesome benefits of organic Kambu with us.",
+      description: "Embrace the nutritional power of our premium Pearl Millet (Kambu). Sourced from hygienic farms, our millet is packed with essential nutrients. Cultivated without harmful chemicals, our premiumpremium Pearl Millet offers a nutty flavor and versatility for various culinary creations. Discover the wholesome benefits of Kambu with us.",
       category: 'millets'
     },
     {
@@ -168,7 +168,7 @@ export class ProductService {
       scientificName: '',
       color: '#855C3BB0',
       imageLink: "../../assets/images/ragi.jpg",
-      description: "Unlock the nutritional treasure of our premium organic Finger Millet (Ragi/Keppai). Sourced from organic farms, our millet is rich in fiber, calcium, and iron. Grown without harmful chemicals, our organic Finger Millet offers a unique nutty flavor and is a versatile ingredient for healthy and delicious meals. Discover the goodness of organic Ragi/Keppai with us.",
+      description: "Unlock the nutritional treasure of our premium Finger Millet (Ragi/Keppai). Sourced from hygienic farms, our millet is rich in fiber, calcium, and iron. Grown without harmful chemicals, our premium Finger Millet offers a unique nutty flavor and is a versatile ingredient for healthy and delicious meals. Discover the goodness of Ragi/Keppai with us.",
       category: 'millets'
     },
     {
@@ -177,7 +177,7 @@ export class ProductService {
       scientificName: 'Eleusine coracana',
       color: '#CDBA95B0',
       imageLink: "../../assets/images/foxtailmillet.jpg",
-      description: "Discover the ancient grain's charm with our premium organic Foxtail Millet (Thinai). Sourced from organic farms, our millet is rich in fiber, protein, and essential nutrients. Grown without harmful chemicals, our organic Foxtail Millet offers a nutty flavor and versatility for nutritious and flavorful culinary creations. Experience the goodness of organic Thinai with us.",
+      description: "Discover the ancient grain's charm with our premium Foxtail Millet (Thinai). Sourced from hygienic farms, our millet is rich in fiber, protein, and essential nutrients. Grown without harmful chemicals, our premium Foxtail Millet offers a nutty flavor and versatility for nutritious and flavorful culinary creations. Experience the goodness of Thinai with us.",
       category: 'millets'
     },
     {
@@ -186,7 +186,7 @@ export class ProductService {
       scientificName: 'Paspalum scrobiculatum',
       color: '#DDBC6FB0',
       imageLink: "../../assets/images/kodomillet.jpg",
-      description: "Experience the nutritional marvel of our premium organic Kodo Millet (Varagu). Sourced from organic farms, our millet is a rich source of dietary fiber and essential minerals. Grown without harmful chemicals, our organic Kodo Millet offers a nutty flavor and is a versatile grain for healthy and wholesome meals. Discover the benefits of organic Varagu with us.",
+      description: "Experience the nutritional marvel of our premium Kodo Millet (Varagu). Sourced from hygienic farms, our millet is a rich source of dietary fiber and essential minerals. Grown without harmful chemicals, our premium Kodo Millet offers a nutty flavor and is a versatile grain for healthy and wholesome meals. Discover the benefits of Varagu with us.",
       category: 'millets'
     },
     {
@@ -195,7 +195,7 @@ export class ProductService {
       scientificName: 'Panicum sumatrense',
       color: '#D7B186B0',
       imageLink: "../../assets/images/littlemillet.jpg",
-      description: "Discover the nutritional treasure of our premium organic Little Millet (Saamai). Sourced from organic farms, our millet is packed with fiber, protein, and essential minerals. Grown without harmful chemicals, our organic Little Millet offers a delicate flavor and is perfect for creating healthy and delicious dishes. Experience the goodness of organic Saamai with us.",
+      description: "Discover the nutritional treasure of our premium Little Millet (Saamai). Sourced from hygienic farms, our millet is packed with fiber, protein, and essential minerals. Grown without harmful chemicals, our premium Little Millet offers a delicate flavor and is perfect for creating healthy and delicious dishes. Experience the goodness of Saamai with us.",
       category: 'millets'
     },
     {
@@ -204,7 +204,7 @@ export class ProductService {
       scientificName: 'Echinochloa esculenta',
       color: '#BF9E74B0',
       imageLink: "../../assets/images/barnyardmillet.jpg",
-      description: "Experience the wholesome goodness of our premium organic Barnyard Millet (Kuthiraivali). Sourced from organic farms, our millet is rich in fiber, iron, and essential nutrients. Grown without harmful chemicals, our organic Barnyard Millet offers a nutty flavor and is a versatile grain for nutritious and tasty culinary creations. Discover the benefits of organic Kuthiraivali with us.",
+      description: "Experience the wholesome goodness of our premium Barnyard Millet (Kuthiraivali). Sourced from hygienic farms, our millet is rich in fiber, iron, and essential nutrients. Grown without harmful chemicals, our premium Barnyard Millet offers a nutty flavor and is a versatile grain for nutritious and tasty culinary creations. Discover the benefits of Kuthiraivali with us.",
       category: 'millets'
     },
     {
@@ -213,7 +213,7 @@ export class ProductService {
       scientificName: 'Sorghum bicolor',
       color: '#E1C89FB0',
       imageLink: "../../assets/images/sorghum.jpg",
-      description: "Explore the nutritional prowess of our premium organic Sorghum (Jowar). Sourced from organic fields, our sorghum is rich in fiber, protein, and essential minerals. Cultivated without harmful chemicals, our organic Jowar offers a mild, nutty flavor and is a versatile grain for creating wholesome and hearty meals. Experience the goodness of organic Sorghum with us.",
+      description: "Explore the nutritional prowess of our premium Sorghum (Jowar). Sourced from hygienic fields, our sorghum is rich in fiber, protein, and essential minerals. Cultivated without harmful chemicals, our premium Jowar offers a mild, nutty flavor and is a versatile grain for creating wholesome and hearty meals. Experience the goodness of Sorghum with us.",
       category: 'millets'
     },
     {
@@ -294,7 +294,7 @@ export class ProductService {
       scientificName: 'Moringa oleifera',
       color: '#57671CB0',
       imageLink: "../../assets/images/moringapods.jpg",
-      description: "Experience the nutritional power of Moringa with our premium range of products. From tender Moringa pods to vibrant Moringa leaves and nutrient-rich Moringa powder, we offer nature's superfood in various forms. Sourced from organic farms, our Moringa products are packed with antioxidants and essential nutrients, promoting overall well-being.",
+      description: "Experience the nutritional power of Moringa with our premium range of products. From tender Moringa pods to vibrant Moringa leaves and nutrient-rich Moringa powder, we offer nature's superfood in various forms. Sourced from hygienic farms, our Moringa products are packed with antioxidants and essential nutrients, promoting overall well-being.",
       category:"moringaProducts"
     },
     {
@@ -303,7 +303,7 @@ export class ProductService {
       scientificName: 'Moringa oleifera',
       color: '#4D9846B0',
       imageLink: "../../assets/images/moringaleaves.jpg",
-      description: "Experience the nutritional power of Moringa with our premium range of products. From tender Moringa pods to vibrant Moringa leaves and nutrient-rich Moringa powder, we offer nature's superfood in various forms. Sourced from organic farms, our Moringa products are packed with antioxidants and essential nutrients, promoting overall well-being.",
+      description: "Experience the nutritional power of Moringa with our premium range of products. From tender Moringa pods to vibrant Moringa leaves and nutrient-rich Moringa powder, we offer nature's superfood in various forms. Sourced from hygienic farms, our Moringa products are packed with antioxidants and essential nutrients, promoting overall well-being.",
       category:"moringaProducts"
     },
     {
@@ -312,7 +312,7 @@ export class ProductService {
       scientificName: 'Moringa oleifera',
       color: '#6B8D37B0',
       imageLink: '../../assets/images/moringa.jpg',
-      description: "Experience the nutritional power of Moringa with our premium range of products. From tender Moringa pods to vibrant Moringa leaves and nutrient-rich Moringa powder, we offer nature's superfood in various forms. Sourced from organic farms, our Moringa products are packed with antioxidants and essential nutrients, promoting overall well-being.",
+      description: "Experience the nutritional power of Moringa with our premium range of products. From tender Moringa pods to vibrant Moringa leaves and nutrient-rich Moringa powder, we offer nature's superfood in various forms. Sourced from hygienic farms, our Moringa products are packed with antioxidants and essential nutrients, promoting overall well-being.",
       category:"moringaProducts"
     }
   ];
